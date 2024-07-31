@@ -1,4 +1,5 @@
 console.log("jay shree ram");
+console.log("jay hanuman g");
 let tags=document.querySelectorAll(".bottom-div h4 span");
 let navbar=document.querySelector("nav");
 // let bottom_div=document.querySelector(".bottom-div");
