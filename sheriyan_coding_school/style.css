@@ -4,6 +4,7 @@
     color: white;
     font-family: sans-serif;
     box-sizing: border-box;
+    
 
 }
 body::-webkit-scrollbar{
@@ -13,6 +14,8 @@ body::-webkit-scrollbar{
 html,body{
     height: 100%;
     width: 100%;
+    
+ 
 }
 .page1{
     height: 100vh;
@@ -117,6 +120,12 @@ nav:hover .nav-bottom{
     /* display: block; */
     display: none;
 }
+.bottom-div h4 span:hover{
+    color: #12a753;
+    cursor: pointer;
+
+}
+
 .bottom-div h4{
 
     overflow: hidden;
@@ -188,31 +197,201 @@ nav button svg{
 .box-all{
 background-color: transparent;
     margin-bottom: 3vh;
+    
 }
 
 .moving-div{
-height: 8vh;
-width: 70vw;    
+height: 3vw;
+width: 50vw;    
 /* border: 1px solid whitesmoke; */
 padding-top: 9vh;
 margin-left: 4vw;
 white-space: nowrap;
-
+opacity: 0.7;
+position: relative;
+box-sizing: border-box;
 
 }
 .move{
     display: inline-block;
+    overflow-x: hidden;
+    
 }
 
 
 .move img{
     height: 6vh;
-    width: 7.5vw;
+    width: 44%vw;
     background-size: cover;
     border-radius: 10%;
     margin: 4px;
+}
+/* .move2{ */
+    /* overflow-x: hidden; */
+/* } */
+.moving-img{
+    /* box-sizing: border-box; */
+    overflow-x: hidden;
+}
+@keyframes mobe {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+    
+
+.moving-div .move{
+    animation-name: mobe;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.text-lorem{
+    height: 10vh;
+    width: 80%;
+ 
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 6vh;
+    text-align: center;
+    font-weight: 520;
+    margin-left: 3vw;
+}
+/* .blur-right{
+    height: 100%;
+    width: 5vw;
+    border: 2px solid red;
+    position: absolute;
+}
+.blur-left{
+    height: 100%;
+    width: 5vw;
+    border: 2px solid rgb(28, 5, 133);
+  
+} */
+ .community_box{
+    height: 33vh;
+    width: 80%;
+    /* border: 1px solid red; */
+    margin-left: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .fist_box,.secound_box, .third_box{
+    height: 90%;
+    width: 25vw;
+    /* border: 1px solid whitesmoke; */
+    margin: 0px 3px;
+    border-radius: 8px;
+    background-color:#1F1F1F;
+ }
+ .fist_box span h3{
+    margin-top: 3vh;
+    margin-right: 2vw;
+    padding: 8px 23px;
+    font-size: 6vh;
+ }
+ .fist_box span2 p{
+    color: whitesmoke;
+    margin-top: 8vh;
+    /* text-align: center; */
+    margin-left: 24px;
+ }
+  .fist_box p2{
+    margin-left: 22vw;
+    opacity: 0.4;
+    font-size: small;
+ }
+
+ .secound_box span h3{
+    margin-top: 3vh;
+    margin-right: 2vw;
+    padding: 8px 23px;
+    font-size: 6vh;
+ }
+ .secound_box span2 p{
+    color: whitesmoke;
+    margin-top: 8vh;
+    /* text-align: center; */
+    margin-left: 24px;
+ }
+
+ .secound_box p2{
+    margin-left: 22vw;
+    opacity: 0.4;
+    font-size: small;
+ }
+
+ .third_box span h3{
+    margin-top: 3vh;
+    margin-right: 2vw;
+    padding: 8px 23px;
+    font-size: 6vh;
+ }
+ .third_box span2 p{
+    color: whitesmoke;
+    margin-top: 8vh;
+    /* text-align: center; */
+    margin-left: 24px;
+ }
+
+ .third_box p2{
+    margin-left: 22vw;
+    opacity: 0.4;
+    font-size: small;
+ }
+.member{
+    height: 20vh;
+    width: 80%;
+    margin-left: 10vw;   
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+
+.box-onee img{
+    height: 50%;
+    border-radius: 50%;
+    margin-left: 1vw;
+}
+.box-onee h3{
+    opacity: 0.6;
+    margin-left: 3vw;
+}
+
+.box-onee,.box-secoundd{
+    height: 80%;
+    width: 50%;
+    border: 0.6px solid rgba(255, 255, 255, 0.712);
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    border-radius: 50vw;
     
 }
-.bottom-div{
-    background-color: red;
+
+.box-secoundd img{
+    height: 50%;
+    border-radius: 50%;
+    margin-left: 1vw;
+
 }
+.box-secoundd h3{
+    opacity: 0.6;
+    margin-left: 3vw;
+}
+
+/* .box-secoundd{
+    height: 90%;
+    width: 50%;
+    border: 1px solid rgb(255, 254, 254);
+    border-radius: 50vw;
+} */
