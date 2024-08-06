@@ -388,10 +388,43 @@ box-sizing: border-box;
     opacity: 0.6;
     margin-left: 3vw;
 }
+.colab-brand h1{
+    /* width: 80%; */
+    color:whitesmoke;
+    padding:4vh 11vw;
+    font-size: 2em;
+    font-weight: 500;
+}
+.brands{
+/* border: 2px solid rgb(240, 0, 0); */
+height: 80vh;
+width: 100vw;
+background-color: #111;
+padding-left: 5vw;
+display: grid;
+grid-template-columns: auto auto auto;
+margin-top: 6vh;
+}
+.box-brand{
+    height: 26vh;
+    /* width: 80%; */
+    /* border: 1px solid yellow; */
 
-/* .box-secoundd{
-    height: 90%;
-    width: 50%;
-    border: 1px solid rgb(255, 254, 254);
-    border-radius: 50vw;
-} */
+}
+
+.box-brand  img {
+    height: 7vh;
+    width: 38%;
+    border-radius: 1vh;
+    /* text-align: center; */
+    margin-left: 2vw;
+    margin-top: 2vw; 
+    opacity: 0.6;
+}
+
+.box-brand h4{
+    font-weight: 500;
+    opacity: 0.7;
+    margin-left: 2vw;
+    
+}
